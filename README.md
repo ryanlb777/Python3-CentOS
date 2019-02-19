@@ -2,6 +2,8 @@
 
 How to install Python3 on CentOS
 
+
+
 1. Download file with wget
 2. Unzip file
 ```sh
@@ -33,4 +35,13 @@ make
 
 make install
 
+```
+
+
+Dependencies:
+```sh
+yum install openssl-devel
+In addition it is recommended to install the following.
+
+yum install zlib-devel bzip2-devel sqlite sqlite-devel openssl-devel
 ```
