@@ -18,10 +18,13 @@ yum install zlib-devel bzip2-devel sqlite sqlite-devel openssl-devel
 1. Download file with wget
 2. Unzip file
 ```sh
+
 wget https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tar.xz
 
 tar xf Python-3.* 
+
 cd Python-3.*
+
 ```
 
 3. Prepare configurations
