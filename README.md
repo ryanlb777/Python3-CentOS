@@ -2,6 +2,13 @@
 
 How to install Python3 on CentOS
 
+First try this:
+```sh
+
+sudo yum install python34
+
+```
+If ^ doesnt work use these... 
 
 Install the Dependencies:
 ```sh
