@@ -3,54 +3,24 @@
 How to install Python3 on CentOS
 
 
-Dependencies:
+Install the Dependencies:
 ```sh
 
-yum install openssl-devel
+yum install wget –y
+wget https://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm
+rpm –ivh epel-*.rpm
+yum install python36
 
-In addition it is recommended to install the following.
+sudo yum install python34-setuptools
+sudo mkdir /usr/local/lib/python3.6
+sudo mkdir /usr/local/lib/python3.6/site-packages
 
-yum install zlib-devel bzip2-devel sqlite sqlite-devel openssl-devel
-
+sudo easy_install-3.6 pip
 ```
 
-
-1. Download file with wget
-2. Unzip file
-```sh
-
-wget https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tar.xz
-
-tar xf Python-3.* 
-
-cd Python-3.*
-
-```
-
-3. Prepare configurations
+Activate the environment
 
 ```sh
-
-$ ./configure --prefix=/opt/local
-
+pyvenv-3.6 py3
+source py3/bin/activate
 ```
-
-4. Build the file
-
-```sh
-
-make
-
-```
-
-5. Install python3
-
-```sh
-
-make install
-
-```
-
-6. Set $PATH to /opt/local...
-
-
