@@ -31,7 +31,7 @@ cd Python-3.*
 
 ```sh
 
-$ ./configure
+$ ./configure --prefix=/opt/local
 
 ```
 
@@ -50,5 +50,7 @@ make
 make install
 
 ```
+
+6. Set $PATH to /opt/local...
 
 
